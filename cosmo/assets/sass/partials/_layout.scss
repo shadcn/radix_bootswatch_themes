@@ -1,0 +1,62 @@
+//
+// Styles for main layout
+// --------------------------------------------------
+
+// Container
+// --------------------------------------------------
+.container {
+  max-width: 970px !important; // Change this to make site wider or smaller.
+}
+
+// Header
+// --------------------------------------------------
+.header {
+}
+body.page-header-hidden {
+  .header {
+    display: none;
+  }
+}
+
+// Top
+// --------------------------------------------------
+.top {
+  @include section();
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+body.page-top-hidden {
+  .top {
+    display: none;
+  }
+}
+
+// Main
+// --------------------------------------------------
+.main {
+  @include section();
+}
+body.page-is-panel {
+  .main {
+    padding-top: 0;
+  }
+}
+body.page-is-not-panel {
+  .main {
+    @extend .container;
+  }
+}
+
+// Footer
+// --------------------------------------------------
+.footer {
+  @include section($navbar-default-border, $text-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+// Equal height columns
+// --------------------------------------------------
+.col-eh {
+  margin-bottom: 30px;
+}

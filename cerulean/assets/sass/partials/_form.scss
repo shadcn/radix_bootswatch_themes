@@ -1,0 +1,23 @@
+//
+// Styles for Forms
+// --------------------------------------------------
+
+// Buttons
+// --------------------------------------------------
+$networks: (twitter #00aced, facebook #3b5998, google_plus #dd4b39, youtube #bb0000, yelp #a50508);
+@each $network in $networks {
+  $name: nth($network, 1);
+  $bg-color: nth($network, 2);
+
+  .btn.btn-#{$name} {
+    background-color: $bg-color;
+    border-color: $bg-color;
+    color: white;
+
+    &:hover {
+      background-color: $bg-color;
+      border-color: $bg-color;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+//
+// Styles for Tabs, Messages, ..etc
+// --------------------------------------------------
+
+// Navbar
+// --------------------------------------------------
+.navbar {
+  margin-bottom: 0;
+  .btn-reservation {
+    margin-top: 5px;
+  }
+}
+.fixed .navbar {
+  margin-bottom: 20px;
+}
+
+// Tabs
+// --------------------------------------------------
+.pane-page-tabs {
+  margin-bottom: 18px;
+}
+
+// Messages
+// --------------------------------------------------
+.pane-page-messages {
+  margin-bottom: 18px;
+}

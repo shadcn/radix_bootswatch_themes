@@ -1,0 +1,42 @@
+//
+// Styles for Views
+// --------------------------------------------------
+
+// General
+// --------------------------------------------------
+.view {
+  .view-header {
+    margin-bottom: 18px;
+     h1, h2, h3 {
+      margin-top: 0;
+    }
+    p.lead {
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  .view-footer {
+    margin-top: 18px;
+  }
+}
+
+// Menu
+// --------------------------------------------------
+.view-display-id-featured_menus {
+  .views-row {
+    margin-bottom: 10px;
+  }
+  .views-row-odd {
+    clear: left;
+  }
+}
+
+// Events
+// --------------------------------------------------
+.view-events {
+  .views-row {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+  }
+}

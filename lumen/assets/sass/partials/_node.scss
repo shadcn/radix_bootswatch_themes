@@ -1,0 +1,106 @@
+//
+// Styles for Nodes
+// --------------------------------------------------
+
+// General
+// --------------------------------------------------
+.node-featured .pane-node-title .pane-content a {
+  font-size: inherit;
+}
+
+// Blog
+// --------------------------------------------------
+.node-type-blog-post {
+  .panel-pane-region {
+    .panel-pane {
+      margin-bottom: 18px;
+    }
+  }
+}
+.field-name-field-blog-post-tags {
+  .field-items {
+    .field-item {
+      display: inline-block;
+      margin: 0 0 0 8px;
+      a {
+        @extend .label;
+        @extend .label-default;
+      }
+    }
+  }
+}
+
+// Menu
+// --------------------------------------------------
+.node-menu {
+  @extend .thumbnail;
+  padding-bottom: 15px !important;
+  .panel-pane {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .pane-node-field-menu-images {
+    padding-left: 0;
+    padding-right: 0;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .pane-node-read-more {
+    .btn {
+      display: block;
+    }
+  }
+}
+.node-type-menu {
+  .panel-pane-region {
+    .panel-pane {
+      margin-bottom: 18px;
+    }
+  }
+}
+.field-collection-item-field-menu-types {
+  .content {
+    @include clearfix();
+  }
+  .field-name-field-menu-type {
+    float: left;
+  }
+  .field-name-field-menu-price {
+    float: right;
+  }
+}
+.field-name-field-menu-images {
+  .field-items {
+    .field-item {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+// Event
+// --------------------------------------------------
+.node-event {
+  .pane-node-body {
+    margin-top: 10px;
+  }
+}
+#event-node {
+  .panel-pane {
+    margin-bottom: 18px;
+  }
+  .pane-node-field-event-featured-image {
+    // @extend .col-md-3;
+    padding-left: 0;
+  }
+  .pane-node-field-event-date {
+    // @extend .col-md-5;
+  }
+  .pane-node-field-event-location {
+    // @extend .col-md-4;
+  }
+  .pane-node-body {
+    clear: left;
+  }
+}

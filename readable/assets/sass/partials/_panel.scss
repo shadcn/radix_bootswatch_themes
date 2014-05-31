@@ -1,0 +1,41 @@
+//
+// Styles for panels and panes.
+// --------------------------------------------------
+
+// General
+// --------------------------------------------------
+.panel-panel {
+  .panel-pane {
+    margin-bottom: 18px;
+    .panel-pane {
+      margin-bottom: inherit;
+    }
+  }
+}
+
+
+// Layout 1 col
+// --------------------------------------------------
+.layout-1col,
+.layout-2col {
+  .panel-pane-region {
+    @include section();
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .panel-pane-region-full-width {
+    @include section($gray-lighter, black);
+  }
+  .panel-pane-region-header,
+  .panel-pane-region-empty {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+body {
+  &.page-with-region-header {
+    .main {
+      padding-top: 0;
+    }
+  }
+}
