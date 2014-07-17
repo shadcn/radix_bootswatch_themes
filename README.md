@@ -10,9 +10,9 @@ A collection of Drupal Bootswatch themes based on Radix.
 
 ## Making changes
 
-*Run the following command to install the required gems:
-    `bundle`
-*Run the following command to start watching Scss changes:
-    `bundle exec compass watch`
-*Make changes to the files at assets/sass/partials.
+1. Run the following command to install the required gems:
+    `$ bundle`
+2. Run the following command to start watching Scss changes:
+    `$ bundle exec compass watch`
+3. Make changes to the files at assets/sass/partials.
 
